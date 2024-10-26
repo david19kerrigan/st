@@ -93,42 +93,37 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* Normal colors */
-	[0]   = "#171b23",
-	[1]   = "#be5046",
-	[2]   = "#98c379",
-	[3]   = "#d19a66",
-	[4]   = "#61afef",
-	[5]   = "#c678dd",
-	[6]   = "#56b6c2",
-	[7]   = "#828997",
+"#181818",
+"#ab4642",
+"#a1b56c",
+"#f7ca88",
+"#7cafc2",
+"#ba8baf",
+"#86c1b9",
+"#d8d8d8",
 
-    /* Bright colors */
-	[8]   = "#5c6370",
-	[9]   = "#e06c75",
-	[10]  = "#98c379",
-	[11]  = "#e5c07b",
-	[12]  = "#61afef",
-	[13]  = "#c678dd",
-	[14]  = "#56b6c2",
-	[15]  = "#abb2bf",
-
-    /* Foreground and background */
-	[256] = "#abb2bf",
-	[257] = "#282c34",
+"#585858",
+"#ab4642",
+"#a1b56c",
+"#f7ca88",
+"#7cafc2",
+"#ba8baf",
+"#86c1b9",
+"#f8f8f8"
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
+
 
 /*
  * Default shape of cursor
